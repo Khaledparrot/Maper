@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hartmann Grid Tracker</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="controls">
+    <button onclick="askLocation()">📍 Get My Location</button>
+    <button onclick="startRoomDrawing()">✏️ Select My Room</button>
+    <button onclick="enableNodeSelection()" id="selectNodeBtn" style="display: none;">🎯 Select Node</button>
+  </div>
+  <div id="map"></div>
+
+  <!-- Leaflet -->
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  <!-- Leaflet Draw -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/leaflet.draw.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/leaflet.draw.js"></script>
+
+  <!-- Custom Scripts -->
+  <script src="js/geolocation.js"></script>
+  <script src="js/zoom-handler.js"></script>
+  <script src="js/draw-grid.js"></script>
+  <script src="js/room-handler.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
